@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+libs="jquery bootstrap"
+deps_dir="deps"
+
+current_dir="$( cd "$( dirname "$0" )" && pwd )"
+cd $current_dir
+
+rm -rf $deps_dir
+mkdir -p $deps_dir
+
+for lib in $libs; do
+  mkdir $deps_dir/$lib
+  rsync -r _bower/$lib/dist/ $deps_dir/$lib
+done

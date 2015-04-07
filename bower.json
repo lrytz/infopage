@@ -1,0 +1,20 @@
+{
+  "name": "infopage",
+  "version": "0.0.0",
+  "authors": [
+    "Lukas Rytz <lukas.rytz@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3",
+    "jquery": "2.1"
+  }
+}
