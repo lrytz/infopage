@@ -12,4 +12,4 @@ facebook_username:  FlugschuleGrenchen
 # Build settings
 markdown: kramdown
 
-exclude: [_bower, bower.json, README.md, copy-deps]
+exclude: [_bower, .bowerrc, bower.json, .gitignore, README.md, copy-deps, server]

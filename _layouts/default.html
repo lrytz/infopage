@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
+  {% assign lvl = page.url | append:'X' | split:'/' | size %}
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
   {% include head.html %}
+
   <body>
 
     {{ content }}
 
-    <script src="/deps/jquery/jquery.min.js"></script>
-    <script src="/deps/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="{{ relative }}deps/jquery/jquery.min.js"></script>
+    <script src="{{ relative }}deps/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ relative }}deps/jquery-validation/jquery.validate.min.js"></script>
+    <script src="{{ relative }}deps/jquery-serialize-object/jquery.serialize-object.min.js"></script>
+    <script src="{{ relative }}scripts/validator-bootstrap.js"></script>
+    {% for scriptName in page.extraJs %}
+      <script src="{{ relative }}{{ scriptName }}"></script>
+    {% endfor %}
 </body>
 </html>

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libs="jquery bootstrap"
+libs="bootstrap jquery jquery-validation jquery-serialize-object"
 deps_dir="deps"
 
 current_dir="$( cd "$( dirname "$0" )" && pwd )"
