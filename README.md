@@ -20,6 +20,7 @@ Doc
   - http://sass-lang.com/guide
   - https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
   - http://jekyllrb.com/docs/home/
+  - https://github.com/ryun/HCaptions
 
 
 Grundsätzlich

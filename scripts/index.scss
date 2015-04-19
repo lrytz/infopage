@@ -1,0 +1,26 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+#index-logo {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  img {
+    height: 100px;
+  }
+}
+
+#index-panels {
+  font-size: 16px;
+  a, a:link, a:visited, a:hover, a:active {
+    color: #333;
+    text-decoration: none;
+  }
+  .panel {
+    margin-bottom: 60px;
+  }
+}
+
+.center-block {
+  width: 70%;
+}

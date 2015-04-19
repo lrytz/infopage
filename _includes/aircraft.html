@@ -1,0 +1,32 @@
+{% assign data = page.aircraftData[include.aircraftDataItem] %}
+
+<div style="width:80%" class="center-block aircraftDiv">
+  <div data-target="#toggle{{ data.imageFile }}" class="hcaption" cap-effect="fade">
+    <img src="{{ relative }}assets/{{ data.imageFile }}.jpg" alt="" class="img-rounded img-responsive center-block"/>
+  </div>
+  <div id="toggle{{ data.imageFile }}" class="imgOverlay img-rounded" data-toggle="modal" data-target="#aircraft-modal-{{ data.imageFile }}" style="cursor:pointer;">
+    <h2>{{ data.modelName }}</h2>
+  </div>
+</div>
+
+<div class="modal fade" id="aircraft-modal-{{ data.imageFile }}">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title">{{ data.modelName }}</h2></div>
+      <div class="modal-body text-left">
+        <img src="{{ relative }}assets/{{ data.imageFile }}.jpg" alt="" class="img-rounded img-responsive center-block" style="width:80%;"/>
+        <p>&nbsp;</p>
+        <p>{{ data.modelDescription }}</p>
+        <p>&nbsp;</p>
+        <table class="table table-striped">
+          {% for prop in data.modelProperties %}
+            <tr><td>{{ prop[0] }}</td><td> {{ prop[1] }}</td></tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+      </div>
+    </div>
+  </div>
+</div>

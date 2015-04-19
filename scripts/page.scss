@@ -4,6 +4,31 @@
 @charset "utf-8";
 
 body {
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 30px;
+}
+
+#navbar {
+  font-size: 20pt;
+}
+
+.navbar {
+  min-height:80px !important
+}
+
+.navbar-brand {
+  padding-top: 10px;
+  margin: 0;
+  img {
+    height: 60px;
+    box-shadow: 0px 0px 20px rgba(256,256,256,1);
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ddd;
+}
+
+.navbar-nav > li > a {
+  padding-top:28px !important;
+  padding-left:20px !important;
 }

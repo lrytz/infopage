@@ -1,38 +1,83 @@
 ---
 layout: title
+extraCss:
+- scripts/index.css
 ---
 
-<div class="row text-center">
-  <div class="col-sm-6">
-    <p>Fliegen Lernen!</p>
-    <a href="{{ relative }}fliegen-lernen.html">
-    <div class="center-block" style="width:50%">
-      <img src="{{ relative }}assets/1554.jpg" alt="" class="img-rounded img-responsive"/>
+<div class="row text-center" id="index-logo">
+  <img src="{{ relative }}assets/logo.jpg" id=""/>
+</div>
+<div id="index-panels">
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div class="index-link center-block">
+        <a href="{{ relative }}fliegen-lernen.html">
+          <div class="panel panel-info">
+            <div class="panel-heading">Lerne Fliegen!</div>
+            <div class="panel-body">
+              Etwas Inhalt.
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-    </a>
+
+    <div class="col-sm-6">
+      <div class="index-link center-block">
+        <a href="{{ relative }}ueber-die-flugschule.html">
+          <div class="panel panel-info  ">
+            <div class="panel-heading">Die Flugschule Grenchen</div>
+            <div class="panel-body">
+              Etwas Inhalt.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="col-sm-6">
-    <p>Über die Flugschule Grenchen</p>
-  </div>
-</div>
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <a href="{{ relative }}flotte.html">
+        <div class="index-link">
+          <div class="panel panel-info center-block">
+            <div class="panel-heading">Unsere Flotte</div>
+            <div class="panel-body">
+              Etwas Inhalt.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
 
-<div class="row text-center">
-  <div class="col-sm-6">
-    <p>Unsere Flotte im Segelflug</p>
+    <div class="col-sm-6">
+      <div class="index-link center-block">
+        <a href="{{ relative }}fotos-und-videos.html">
+          <div class="panel panel-info">
+            <div class="panel-heading">Fotos und Videos</div>
+            <div class="panel-body">
+              Etwas Inhalt.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="col-sm-6">
-    <p>Unsere Flotte im Motorflug</p>
-  </div>
-</div>
-
-<div class="row text-center">
-  <div class="col-sm-6">
-    <p>Fotos und Videos</p>
-  </div>
-
-  <div class="col-sm-6">
-    <p>Wettbewerb</p>
+  <div class="row text-center">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <div class="index-link center-block">
+        <a href="{{ relative }}wettbewerb.html">
+          <div class="panel panel-warning">
+            <div class="panel-heading">Wettbewerb</div>
+            <div class="panel-body">
+              Etwas Inhalt.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-3"></div>
   </div>
 </div>
