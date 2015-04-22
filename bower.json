@@ -17,6 +17,8 @@
     "bootstrap": "3.3",
     "jquery": "2.1",
     "jquery-validation": "1.13",
-    "jquery-serialize-object": "2.4"
+    "jquery-serialize-object": "2.4",
+    "Justified-Gallery": "3.5",
+    "jquery-colorbox": "1.6"
   }
 }

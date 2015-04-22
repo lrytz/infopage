@@ -18,3 +18,6 @@ libraryDependencies ++= Seq(
   "io.spray"           %% "spray-httpx"    % "1.3.2",
   "io.spray"           %% "spray-json"     % "1.3.1",
   "com.novus"          %% "salat"          % "1.9.9")
+
+libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.2.8" % "test" cross CrossVersion.full
+initialCommands in (Test, console) := "ammonite.repl.Repl.main(null)"

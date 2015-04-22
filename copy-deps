@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libs="bootstrap jquery jquery-validation jquery-serialize-object"
+libs="bootstrap jquery jquery-validation jquery-serialize-object Justified-Gallery"
 deps_dir="deps"
 
 current_dir="$( cd "$( dirname "$0" )" && pwd )"
@@ -13,3 +13,7 @@ for lib in $libs; do
   mkdir $deps_dir/$lib
   rsync -r _bower/$lib/dist/ $deps_dir/$lib
 done
+
+mkdir $deps_dir/colorbox
+cp _bower/jquery-colorbox/jquery.colorbox-min.js $deps_dir/colorbox
+rsync -r _bower/jquery-colorbox/example1 $deps_dir/colorbox
