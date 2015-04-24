@@ -1,30 +1,17 @@
 ---
 layout: page
-numImages: 13
+numImages: 28
 ---
+<h1>Einige Impressionen aus dem Flugbetrieb</h1>
+
+<p>&nbsp;</p>
 
 <div class="row">
   <div id="bilderGallery" >
     {% for i in (1..page.numImages) %}
-      <a href="{{ relative }}assets/bilder/{{ i }}.jpg" data-toggle="modal" data-target="#image{{ i }}">
+      <a href="{{ relative }}assets/bilder/{{ i }}.jpg">
         <img src="assets/bilder/{{ i }}.jpg"/>
       </a>
-
-<!--   <div class="col-xs-6 col-md-3">
-    <div data-toggle="modal" data-target="#image{{ i }}" style="cursor:pointer;">
-    <img src="{{ relative }}assets/bilder/{{ i }}.jpg" width="100%" />
-    </div>
-  </div>
-  <div class="modal fade" id="image{{ i }}">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body text-left">
-          <img src="{{ relative }}assets/bilder/{{ i }}.jpg" width="100%"/>
-        </div>
-      </div>
-    </div>
-  </div> -->
     {% endfor %}
   </div>
 </div>
-Bilder

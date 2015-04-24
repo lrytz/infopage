@@ -28,7 +28,12 @@ function checkboxAnswer(arg) {
 
 contestForm.validate({
   rules: {
-    answer2: "required"
+    smgGruendung: "required",
+    segelflugzeugSekundaer: "required",
+    drehAchse: "required",
+    jugendProgramm: "required",
+    alterSegelflug: "required",
+    richtung: "required"
   }
 });
 
@@ -58,11 +63,17 @@ $("#contestFormSubmit").click(function(event) {
       contact: {
         first: data.inputFirst,
         last:  data.inputLast,
-        city:  data.inputCity,
-        phone: data.inputPhone,
         email: data.inputEmail
       },
-      answers: [data.answer1, radioAnswer(data.answer2), checkboxAnswer([data.answer3_1, data.answer3_2, data.answer3_3])]
+      // answers: [data.answer1, radioAnswer(data.answer2), checkboxAnswer([data.answer3_1, data.answer3_2, data.answer3_3])]
+      answers: [
+        radioAnswer(data.smgGruendung),
+        radioAnswer(data.segelflugzeugSekundaer),
+        radioAnswer(data.drehAchse),
+        radioAnswer(data.jugendProgramm),
+        radioAnswer(data.alterSegelflug),
+        radioAnswer(data.richtung)
+      ]
     };
 
     $.ajax({

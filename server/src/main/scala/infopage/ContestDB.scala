@@ -26,7 +26,7 @@ object ContestDB {
     def esc(s: String) = "\"" + s.replace("\"", "\\\"") + "\""
     submissions.map(s => {
       val c = s.contact
-      s"""${esc(c.first)},${esc(c.last)},${esc(c.city)},${esc(c.phone)},${esc(c.email)},${s.answers.map(esc).mkString(",")}"""
+      s"""${esc(c.first)},${esc(c.last)},${esc(c.email)},${s.answers.map(esc).mkString(",")}"""
     })
   }
 

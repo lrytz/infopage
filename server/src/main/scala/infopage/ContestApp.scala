@@ -13,6 +13,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
  * curl -X POST --header "Content-Type:application/json" -d @test.json 127.0.0.1:8080/contestSubmission
+ * curl -X POST 127.0.0.1:8080/wipeOutSubmissions
  */
 class ContestApp extends SimpleRoutingApp with Bootable with CORSSupport {
 
