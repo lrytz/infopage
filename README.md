@@ -1,6 +1,8 @@
 # Install Tools
 
 ```
+brew install sbt
+brew install mongodb
 brew install ruby
 gem install jekyll
 npm install -g bower
@@ -12,6 +14,37 @@ npm install -g bower
 bower install
 ./copy-deps
 ```
+
+# Run
+
+mongodb
+```
+mongod --config /usr/local/etc/mongod.conf
+```
+
+server
+```
+sbt stage
+./target/universal/stage/bin/infopage-server
+```
+
+website
+```
+jekyll build # or jekyll serve
+```
+
+# Data
+
+wipe
+```
+curl -X POST 127.0.0.1:8080/wipeOutSubmissions
+```
+
+export:
+```
+curl http://127.0.0.1:8080/submissionsToCVS
+```
+
 
 # Notes
 
